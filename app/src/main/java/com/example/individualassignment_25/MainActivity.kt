@@ -115,7 +115,7 @@ fun cartItem(image: Int, name: String, quant: Int, price: Double) {
 @Composable
 fun checkoutButton(scope: CoroutineScope, snackbarHost: SnackbarHostState) {
     var ordered =  remember { mutableStateOf(false) }
-    val buttonText = if (ordered.value) "Ordered" else "Order"
+    val buttonText = if (ordered.value) "Ordered" else "Checkout"
     Button(
         onClick = {
             scope.launch {
